@@ -1,0 +1,46 @@
+﻿<Page
+    x:Class="RT_PrintDemoII.PrintLabel"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:RT_PrintDemoII"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel Height="100" VerticalAlignment="Top">
+            <TextBlock x:Name="textBlock" TextWrapping="Wrap" Text="Printer SDK Demo" FontSize="16"/>
+            <TextBlock x:Name="textBlock1" TextWrapping="Wrap" Text="Print Label" FontSize="48"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="450" VerticalAlignment="Top" Width="400" Margin="5,105,0,0">
+            <RadioButton x:Name="rbItemLabel" Content="Item Label" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Checked="rbItemLabel_Checked"/>
+            <StackPanel Height="60" Orientation="Horizontal">
+                <TextBlock x:Name="textBlock2" TextWrapping="Wrap" Text="Item Name" Width="83" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" Margin="0,23"/>
+                <TextBox x:Name="txtItemName" Margin="5,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="290" HorizontalAlignment="Center" TextChanged="txtItemName_TextChanged_1"/>
+            </StackPanel>
+            <StackPanel Height="50" Orientation="Horizontal">
+                <TextBlock x:Name="textBlock3" TextWrapping="Wrap" Text="Item No." Width="83" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16"/>
+                <TextBox x:Name="txtItemNo" Margin="5,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="290" HorizontalAlignment="Center" TextChanged="txtItemNo_TextChanged"/>
+            </StackPanel>
+            <RadioButton x:Name="rbURLLabel" Content="URL QR Label" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Checked="rbURLLabel_Checked"/>
+            <StackPanel Height="55" Orientation="Horizontal">
+                <TextBlock x:Name="textBlock4" TextWrapping="Wrap" Text="URL" Width="83" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16"/>
+                <TextBox x:Name="txtURL" Margin="5,0,0,0.167" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="290" HorizontalAlignment="Center" TextChanged="txtURL_TextChanged"/>
+            </StackPanel>
+            <StackPanel Height="51" Orientation="Horizontal">
+                <TextBlock x:Name="textBlock5" TextWrapping="Wrap" Text="TextLine1" Width="83" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBox x:Name="txtTextLine1" Margin="5,6,0,5.833" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="290" HorizontalAlignment="Center" TextChanged="txtTextLine1_TextChanged"/>
+            </StackPanel>
+            <StackPanel Height="59" Orientation="Horizontal">
+                <TextBlock x:Name="textBlock6" TextWrapping="Wrap" Text="TextLine2" Width="83" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16"/>
+                <TextBox x:Name="txtTextLine2" Margin="5,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="290" HorizontalAlignment="Center" TextChanged="txtTextLine2_TextChanged"/>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="385" Margin="5,530,0,0" Orientation="Horizontal">
+            <Button x:Name="btnPrintLabel" Content="Print Label" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5,0,0,0" Click="btnPrintLabel_Click"/>
+            <Button x:Name="btnBack" Content="Back" HorizontalAlignment="Right" VerticalAlignment="Stretch" Margin="155,0,0,0" Click="btnBack_Click"/>
+        </StackPanel>
+
+    </Grid>
+</Page>
